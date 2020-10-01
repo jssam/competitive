@@ -1,0 +1,12 @@
+know whether the alphabets repeat continously in string or not
+
+
+name =list(input())
+z = int(len(name))
+c = int(z/2)
+for i in range(0, c):
+        if (name[i] == name[len(name)-i-1]):
+            t = "YES"
+        else: 
+            t = "NO"
+print(t)
