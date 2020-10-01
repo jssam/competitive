@@ -1,0 +1,12 @@
+#power ful girls ques
+
+N = int(input())
+a = list(input().split(" "))
+b = list(input().split(" "))
+c = list()
+for i in range(0, N):
+    k = int(b[i])/int(a[i])
+    
+    c.insert(i, int(k))
+c.sort()
+print(c[0])
