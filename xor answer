@@ -1,0 +1,27 @@
+##answer of xor quesion
+
+import numpy as np
+def minCost(arr,n,pica): 
+    cost = 999999; 
+    XOR = 0; 
+    for i in range(0, n): 
+        XOR ^= arr[i]; 
+    for i in range(0,n): 
+        if (cost > abs((XOR ^ arr[i]) - arr[i])): 
+            cost = abs((XOR ^ arr[i]) - arr[i]) 
+            element = arr[i] 
+    if abs(cost)!=0:
+        pica=pica+1
+    return(pica)
+
+pica=0
+n=list(input())
+k = int(input())
+z = int(len(n))
+l= z-k+1
+for i in range(l):
+    p = n[i:k+i]
+    sam=int(len(p))
+    p = np.array(p,dtype=int)
+    pica = minCost(p, sam,pica)
+print(pica)  
