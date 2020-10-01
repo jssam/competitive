@@ -1,0 +1,17 @@
+##try to minimise time but passsed##
+
+
+
+r,p,a=range,list,int(input())
+for l in r(a):
+ t,u,h,q=int(input()),p(input()),0,1
+ for i in r(t):
+  if i<t-1and u[i]==u[i+1]:
+   q+=1
+  else:
+   if q>h:
+    h,y,q=q,p(u[i]),1
+   elif q==h:
+    y+=(u[i])
+   q=1
+ c=''.join(sorted(p(set(y))));print(h,c)
