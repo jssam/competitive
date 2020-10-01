@@ -1,0 +1,8 @@
+find the minimum number of operation needed to make the n numbers of number xor to be zero
+there should not be xor of all numbers more than 0
+input the amount of input
+than input the list of the numbers 
+than input the numbers you have input
+#output
+output should contain the minimum number of operation needed to make the xor of  all 0 
+output should be single integer
