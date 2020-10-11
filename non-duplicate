@@ -1,0 +1,14 @@
+You are given an array of integers. Except one element, each element occurs twice.
+So, you need to find the non-duplicate element.
+
+Input: Array of integers
+Output: Non-duplicate element
+
+Example:
+Input: [3, 6, 1, 0, 6, 0, 1]
+Ouput: 3
+
+Explanation: Except 3 all other elements occur twice in the array.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
