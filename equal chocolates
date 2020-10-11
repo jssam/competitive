@@ -1,0 +1,21 @@
+One day two friends Rohit and Krishna decided to help poor children by giving them free chocolates.
+But they have limited amount of chocolates with them . So, Krishna decided that they will distribute the chocolates only when each children will get equal number of chocolates.
+
+Help Rohit and Krishna to decide whether they can distributes chocolates to poor children or not.
+
+Input:
+First line will contain , two integers M and R where M is number of children and R is the number of chocolates they have.
+Output:
+Output in a single line answer "Yes"(without quotes) if they can distribute the chocolates otherwise "No"(without quotes).
+
+Constraints
+1≤M≤100
+2≤R≤106
+Sample Input:
+2 4
+
+3 10
+
+Sample Output:
+Yes
+No
