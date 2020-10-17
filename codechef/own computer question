@@ -1,0 +1,32 @@
+Chef wants to build his own computer. So, he bought a motherboard. Motherboard has infinite slots for RAM. Chef decided to go to the Hardware market. He possesses M rupees only. In the market, there are N RAMs of different brand and different memory available.
+
+Find the maximum possible memory that Chef can buy. Chef can also buy more than one unit of RAM of the same brand and same memory. But the main prerequisite for the computer to work is that there should be at least K slots of RAM.
+
+Help Chef to decide which RAMs to choose from all the given RAMs to achieve maximum total RAM(Memory) from available money.
+
+Input:
+The first line of input contains three space-separated integers N, M and K.
+N lines follow. The ith line contains two space-separated integers Ii and Pi denoting the Memory in the ith RAM and price of the ith RAM. (1≤i≤N). Memory of RAMs is in MBs.
+Output:
+For each test case print "YES" without quotes along with the maximum Total Memory(In MB) Chef can buy if he can make his own computer else print "NO" without quotes.
+
+Constraints
+1≤N≤500
+1≤M≤2∗106
+1≤K≤4∗108
+1≤Ii,Pi≤105
+Sample Input 1:
+3 6 1
+6 4
+5 3
+1 1
+Sample Output 2:
+YES 10
+EXPLANATION 1:
+Chef can buy 2 RAMs costing 3 rupees each to get total 10 MB of RAM. There is no other way Chef can get more Memory.
+
+Sample Input 2:
+3 10 12
+8 10
+7 11
+11 12
