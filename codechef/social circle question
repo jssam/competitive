@@ -1,0 +1,26 @@
+In a typical social media website, there are various friends of ours, who are common, known as mutual friends.
+
+We define a set of users to be a part of a Social Circle S, if each friend in that set satisfies the following characteristics:
+
+If A is a friend of B, both A and B should belong to the same set.
+If A is a friend of B and C is also a friend of B (i.e. B is the mutual friend), all three should belong to the same set.
+No user can be present in two different sets i.e. one user can be present in any one distinguished set.
+Now, suppose you are selected as an intern in a social-media company. You are provided with N users (ranging from 1 to N) forming M pair of friends, i.e. A B, indicating that A is a friend of B (or vice versa). You are asked to find the total number K of such Social Circles S and number of users in each Social Circle S. The number of users should be given in increasing order of the size of their Social Circle.
+
+Input:
+First line of input contains N and M. Then M lines follow.
+Output:
+For each testcase, print K, denoting number of Social Circles. In the next line, print K space separated integers denoting number of users in each Social Circle in increasing order of their size.
+
+Constraints
+1≤N≤105
+0≤M≤min(N∗(N−1)/2,105)
+Sample Input:
+4 2
+1 2
+2 3
+Sample Output:
+2
+1 3
+EXPLANATION:
+There are total 2 social circles. First social circle contains 3 users: 1, 2 and 3. While the other social circle contains only 1 user: 4.
