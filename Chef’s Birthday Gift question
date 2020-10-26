@@ -1,0 +1,49 @@
+Chef's birthday is coming soon, so Miu decided to gift him a set of 3 strings.
+The 3 strings are A, B & C all of length N and all consisting of lowercase English alphabets.
+
+Chef likes the set of strings if all the strings can be made equal after performing the following operation some amount of times:
+
+Select any two adjacent characters in A and swap them. Then select any two adjacent characters in B and swap them. Then select any two adjacent characters in C and swap them.
+Note that in one move he swaps exactly one pair of adjacent characters in A, exactly one pair of adjacent characters in B and exactly one pair of adjacent characters in C.
+
+Help Miu determine if the set of strings she selected will be liked by Chef or not.
+
+Input:
+The first line of the input consists of a single integer T denoting the number of test cases.
+First line of each test case consists of a single integer N denoting the length of the strings.
+The next 3 lines consist of the strings A, B & C respectively.
+Output:
+For each test case if the set of strings is liked by Chef print "YES" without the quotes else print "NO" without the quotes in a single line.
+Constraints
+1 <= T <= 10
+1 <= N <= 105
+Subtasks
+Subtask #1 (100 points):
+
+Original Constraints
+Sample Input:
+2
+6
+bacdef
+abdcef
+abcdfe
+4
+haha
+lmao
+xoxo
+
+Sample Output:
+YES
+NO
+
+EXPLANATION:
+Example Case 1:
+Here in one move he can select the following characters and swap them:
+From A: 1st and 2nd
+From B: 3rd and 4th
+From C: 5th and 6th
+Now, all the strings become equal i.e., “abcdef” thus Chef will like the set of strings.
+Note that Chef can make as many moves as much he wants.
+
+Example Case 2:
+Here, he can perform any number of swaps but the 3 strings can never be equal.
