@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class decimaltoanybase {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int N = in.nextInt();
+		int M= in.nextInt();
+		
+
+		int multiplier=1;
+		int ans=0;
+		while(N!=0)
+		{
+			
+			int rem=N%M;
+			ans=ans+(rem*multiplier);
+		 multiplier=multiplier*10;
+		N =N/M;
+		
+		}System.out.print(ans);
+		in.close();
+	}
+
+}
