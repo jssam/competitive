@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class decimaltobinary {
+
+	
+		public static void main(String[] args) {
+			Scanner in = new Scanner(System.in);
+			int N=in.nextInt();
+			int multiplier=1;
+			int ans=0;
+			while(N!=0)
+			{
+				
+				int rem=N%2;
+				ans=ans+(rem*multiplier);
+			 multiplier=multiplier*10;
+			N =N/2;
+			
+			}System.out.print(ans);
+			in.close();
+		}
+
+	}
